@@ -1,8 +1,9 @@
 <div class="container bg-secondary-subtle rounded">
   <%= render @friend %>
 
-  <div>
+  <div class="d-flex">
     <%= link_to "Edit", edit_friend_path(@friend), class:"btn btn-secondary" %> 
+    <%= button_to "Delete", @friend, method: :delete, class:"btn btn-outline-danger" %>
     <%= link_to "Back", friends_path, class:"btn btn-dark"  %>
   </div>
   <br/>
